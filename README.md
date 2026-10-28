@@ -1,8 +1,11 @@
 # Narrador LMU
 
-Narração ao vivo de corridas do **Le Mans Ultimate (LMU)** com duas vozes: um **narrador**, que descreve a ação, e um **comentarista**, que analisa a corrida. Feito para lives e gravações: o áudio sai separado, e você o capta no OBS com o VB-Cable.
+Narração ao vivo de corridas do **Le Mans Ultimate (LMU)** com duas vozes: um **narrador**, que
+descreve a ação, e um **comentarista**, que analisa a corrida. Feito para lives e gravações: o
+áudio sai separado, e você o capta no OBS com o VB-Cable.
 
-Aqui estão os downloads do app e o passo a passo para **ativar a sua assinatura** e **configurar as chaves** dos serviços de IA.
+Aqui estão os downloads do app e o passo a passo para ativar a sua assinatura e configurar as
+chaves dos serviços de IA.
 
 - Baixe a versão mais recente em **[Releases](https://github.com/FelipeSSantos1/LMUNarrador/releases/latest)**.
 - Assinatura (mensal ou anual): **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/155ebdd4-f062-41fd-bb33-2cd4cab0ad5d?enabled=2305538%2C2305551)**.
@@ -11,15 +14,85 @@ Aqui estão os downloads do app e o passo a passo para **ativar a sua assinatura
 
 ## Sumário
 
-1. [Instalação](#1-instalação)
-2. [Ativar a sua assinatura](#2-ativar-a-sua-assinatura)
-3. [Chaves de API: o que são e onde colar](#3-chaves-de-api-o-que-são-e-onde-colar)
-4. [Criar a chave do Gemini](#4-criar-a-chave-do-gemini)
-5. [Criar a chave do DeepSeek](#5-criar-a-chave-do-deepseek)
-6. [Voz de emoção (opcional): ElevenLabs](#6-voz-de-emoção-opcional-elevenlabs)
-7. [Atualizar o app](#7-atualizar-o-app)
-8. [Problemas comuns](#8-problemas-comuns)
-9. [Privacidade](#9-privacidade)
+- [Veja em ação](#veja-em-ação)
+- [O que ele faz](#o-que-ele-faz)
+- [Requisitos](#requisitos)
+- [Assinatura](#assinatura)
+- [1. Instalação](#1-instalação)
+- [2. Ativar a sua assinatura](#2-ativar-a-sua-assinatura)
+- [3. Chaves de API: o que são e onde colar](#3-chaves-de-api-o-que-são-e-onde-colar)
+- [4. Criar a chave do Gemini](#4-criar-a-chave-do-gemini)
+- [5. Criar a chave do DeepSeek](#5-criar-a-chave-do-deepseek)
+- [6. Voz de emoção (opcional): ElevenLabs](#6-voz-de-emoção-opcional-elevenlabs)
+- [7. Atualizar o app](#7-atualizar-o-app)
+- [8. Problemas comuns](#8-problemas-comuns)
+- [9. Privacidade](#9-privacidade)
+
+---
+
+## Veja em ação
+
+- Canal com vários vídeos do app funcionando: **https://www.youtube.com/@LMUinVR**
+- Vídeo de exemplo: [ver no YouTube](https://youtube.com/shorts/gEExHJTlZ5o)
+
+| | |
+|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/38d7f3b1-ac04-443a-9c38-07fa38eb75cf" width="420" alt="Aba Painel"><br>**Painel** | <img src="https://github.com/user-attachments/assets/ec4c0146-9482-446a-9247-10a6c6178bcf" width="420" alt="Aba Vozes"><br>**Vozes** |
+| <img src="https://github.com/user-attachments/assets/cbdc1126-75b7-4c91-b159-9669ce7f2e64" width="420" alt="Aba Personalidade"><br>**Personalidade** | <img src="https://github.com/user-attachments/assets/fdf4aead-653d-4a9f-8bbc-6fd11a14773e" width="420" alt="Aba Chaves"><br>**Chaves** |
+| <img src="https://github.com/user-attachments/assets/1eee11cf-0d56-4d88-8cf9-bd65e72a2259" width="420" alt="Aba LLM"><br>**LLM** | |
+
+---
+
+## O que ele faz
+
+- **Lê o jogo direto.** Usa a telemetria em memória compartilhada do LMU. Não precisa instalar
+  plugin: basta ligar *Enable Plugins* nas configurações do jogo.
+- **Duas vozes que conversam entre si.** O narrador descreve a ação; o comentarista analisa a
+  corrida. Cada evento gera de 1 a 3 falas curtas.
+- **Sabe o que importa.** Foca na classe do seu carro (por exemplo GT3). Avisa quando carros de
+  classes mais rápidas se aproximam por trás e também narra eventos graves de qualquer classe:
+  acidente, líder rodando, bandeira amarela geral (FCY) e chuva.
+- **Nunca trava o jogo.** A telemetria roda em threads próprias e nunca espera pela narração
+  nem pelo áudio.
+- **Pronto para live.** Manda a narração para um dispositivo de áudio separado (por exemplo o
+  VB-Cable), que aparece como uma fonte própria no OBS. Também pode tocar no alto-falante.
+- **Portátil.** Uma pasta, sem instalador e sem gravar nada fora dela. Para desinstalar, apague
+  a pasta.
+- **Nunca fica mudo.** Se o serviço de IA demorar ou falhar, o app usa falas prontas (templates).
+
+---
+
+## Requisitos
+
+- Windows 11 (64 bits)
+- Le Mans Ultimate com *Settings → Gameplay → Enable Plugins → ON* (feche e abra o jogo por
+  completo depois de ligar)
+- Cerca de 500 MB de espaço em disco (as vozes locais já vêm junto)
+- Opcional: chave de API do **Gemini** e/ou do **DeepSeek**, para as falas escritas por IA
+- Opcional: [VB-Cable](https://vb-audio.com/Cable/) para mandar a narração ao OBS como fonte
+  separada
+
+---
+
+## Assinatura
+
+A venda é feita pelo [Lemon Squeezy](https://www.lemonsqueezy.com/), que cuida do pagamento e dos
+impostos. Depois da compra, a chave de licença chega por e-mail.
+
+| Plano | Preço | Inclui |
+|-------|-------|--------|
+| Mensal | CA$ 2,99 / mês | App completo: falas por IA e todas as vozes (você usa a sua própria chave de IA) |
+| Anual | CA$ 29,90 / ano | Igual ao mensal, com 2 meses grátis |
+
+**Sem licença** o app abre e narra só com templates, usando as vozes locais (Piper e Kokoro).
+As falas escritas por IA e as vozes de emoção opcionais (ElevenLabs e Gemini TTS) exigem
+assinatura ativa.
+
+- **Um computador ativo por chave.** Para usar em outro PC, abra o app no primeiro, vá na aba
+  **Licença** e clique em **Desativar este computador**; depois ative a chave no outro.
+- A licença é conferida online a cada 6 horas e vale por até 7 dias sem internet.
+- Se a assinatura terminar, o app volta a narrar só com templates. Renove para voltar às falas
+  por IA.
 
 ---
 
@@ -55,7 +128,7 @@ O app é **portátil**: uma pasta, sem instalador. Para desinstalar, apague a pa
 
 ### Regras da licença
 
-- **Um computador ativo por chave.** Para usar em outro PC, abra o app no primeiro e clique em **Desativar este computador** (precisa de internet). Depois ative a mesma chave no outro PC. Se o primeiro PC não existe mais (formatou, quebrou), fale com o suporte para liberar a vaga.
+- **Um computador ativo por chave.** Para usar em outro PC, abra o app no primeiro e clique em **Desativar este computador** (precisa de internet). Depois ative a mesma chave no outro PC. Se o primeiro PC não existe mais (formatou, quebrou), fale comigo no Discord para liberar a vaga.
 - **Colar de novo a chave que já está ativa** só avisa que ela já está ativa neste computador. Colar **outra** chave troca a licença, e a anterior é desativada deste computador.
 - **Quando a assinatura termina** (cancelada ou vencida), a aba mostra **"vencida"** e o app volta a narrar só com templates a partir da próxima fala. Uma linha de aviso aparece também na janela principal. Para voltar, renove em **Minhas compras** ou assine de novo pelo botão **Renovar/Assinar** da aba. Uma assinatura nova pode gerar uma chave nova: ative-a na aba.
 - **Sem internet:** o app confere a licença a cada 6 horas e **aguenta até 7 dias** sem conseguir conferir. Depois disso ele mostra "Licença não confirmada" até voltar a ter internet, e então volta sozinho em alguns minutos.
@@ -136,7 +209,7 @@ Além das vozes locais (Piper e Kokoro), o app pode usar uma **voz de emoção**
 2. Já logado, abra **<https://elevenlabs.io/app/settings/api-keys>**. Se o endereço mudar, procure **API Keys** no menu da sua conta.
 3. Clique para **criar uma chave**, dê um nome (por exemplo "Narrador LMU") e **copie** a chave. Se o ElevenLabs permitir restringir as permissões da chave, deixe só o necessário para gerar voz e listar vozes.
 4. No app, aba **Chaves**, bloco **ElevenLabs**: cole e clique em **Salvar chaves**.
-5. Aba **Vozes**: escolha o motor **elevenlabs**, clique em **Carregar minhas vozes** e escolha uma voz da sua conta. No plano gratuito, vozes da biblioteca podem ser recusadas pela API: use uma voz **sua** ou da sua lista. Para o narrador e o comentarista soarem diferentes, escolha **vozes diferentes**.
+5. Aba **Vozes**: escolha o motor **elevenlabs**, clique em **Carregar vozes** e escolha uma voz da sua conta. No plano gratuito, vozes da biblioteca podem ser recusadas pela API: use uma voz **sua** ou da sua lista. Para o narrador e o comentarista soarem diferentes, escolha **vozes diferentes**.
 6. Use o botão **Ouvir** para testar. Se falhar, ele mostra o motivo (por exemplo "chave recusada" ou "voz não encontrada").
 7. **Reinicie o app** para a mudança de motor valer.
 
@@ -184,13 +257,13 @@ Leia as notas de cada versão em [Releases](https://github.com/FelipeSSantos1/LM
 
 - **"LMU: aguardando o jogo".** Confira o *Enable Plugins* do jogo (seção 1), feche e abra o LMU por completo, e use o mesmo nível de permissão nos dois.
 - **A aba Licença diz "Licença não confirmada".** Falta internet há mais de 7 dias, ou o relógio do Windows está errado. Conecte-se e confira a hora automática. O app tenta de novo sozinho.
-- **"Esta licença já está ativa em outro computador".** Use **Desativar este computador** no outro PC, ou fale com o suporte se ele não existe mais.
+- **"Esta licença já está ativa em outro computador".** Use **Desativar este computador** no outro PC, ou fale comigo no Discord se ele não existe mais.
 - **"Licença necessária".** A assinatura não está ativa. Ative a chave (seção 2) ou renove.
 - **A IA não fala, só fala pronta.** Falta a chave do Gemini/DeepSeek, a chave foi recusada, ou a conta não tem saldo/cota. Veja a aba **Chaves** e o indicador de LLM na janela principal.
 - **A voz de emoção cai na voz normal.** Chave do ElevenLabs ausente ou recusada, voz não encontrada, créditos acabando ou limite diário atingido. Teste com **Ouvir**.
 - **Não sai som no OBS.** Escolha o dispositivo do VB-Cable na aba **Geral** e reinicie o app.
 
-Para outros problemas, abra uma *issue* aqui no repositório ou fale com o suporte: **[SEU CONTATO AQUI]**. Se puder, anexe o arquivo da pasta `logs\` (ele não contém as suas chaves).
+Para outros problemas, abra uma *issue* aqui no repositório ou fale comigo no Discord: **https://discord.gg/M57WADguZ**. Se puder, anexe o arquivo da pasta `logs\` (ele não contém as suas chaves).
 
 ---
 
@@ -200,3 +273,7 @@ Para outros problemas, abra uma *issue* aqui no repositório ou fale com o supor
 - Para validar a licença, o app contata o **Lemon Squeezy** (`api.lemonsqueezy.com`) e envia a **chave de licença** e o **nome do seu computador**. Nada além disso é enviado para a validação, e o app não guarda os seus dados de compra.
 - Para escrever as falas, o app envia o **texto dos eventos da corrida** (posições, tempos, incidentes) ao serviço de IA que você escolheu, usando a **sua** chave e sujeito aos termos dele.
 - O app não envia a sua telemetria do jogo para nenhum outro lugar.
+
+---
+
+*O Narrador LMU é um projeto independente de fã e não é afiliado nem endossado pela Studio 397, pela Motorsport Games ou pelo FIA WEC.*
