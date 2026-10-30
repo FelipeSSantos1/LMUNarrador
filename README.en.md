@@ -14,7 +14,7 @@ This is where you download the app and find the steps to activate your subscript
 the AI service keys.
 
 - Download the latest version from **[Releases](https://github.com/FelipeSSantos1/LMUNarrador/releases/latest)**.
-- Subscription (monthly or yearly): **[buy a license](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc?enabled=2317876%2C2317894)**.
+- Subscription (monthly or yearly): **[buy a license](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc)**.
 
 ---
 
