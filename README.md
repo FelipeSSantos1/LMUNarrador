@@ -10,7 +10,7 @@ Aqui estão os downloads do app e o passo a passo para ativar a sua assinatura e
 chaves dos serviços de IA.
 
 - Baixe a versão mais recente em **[Releases](https://github.com/FelipeSSantos1/LMUNarrador/releases/latest)**.
-- Assinatura (mensal ou anual): **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc?enabled=2317876%2C2317894)**.
+- Assinatura (mensal ou anual): **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc)**.
 
 ---
 
