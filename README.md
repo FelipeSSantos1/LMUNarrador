@@ -1,5 +1,7 @@
 # Narrador LMU
 
+🇧🇷 **Português** · 🇬🇧 [English](README.en.md)
+
 Narração ao vivo de corridas do **Le Mans Ultimate (LMU)** com duas vozes: um **narrador**, que
 descreve a ação, e um **comentarista**, que analisa a corrida. Feito para lives e gravações: o
 áudio sai separado, e você o capta no OBS com o VB-Cable.
@@ -8,7 +10,7 @@ Aqui estão os downloads do app e o passo a passo para ativar a sua assinatura e
 chaves dos serviços de IA.
 
 - Baixe a versão mais recente em **[Releases](https://github.com/FelipeSSantos1/LMUNarrador/releases/latest)**.
-- Assinatura (mensal ou anual): **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/155ebdd4-f062-41fd-bb33-2cd4cab0ad5d?enabled=2305538%2C2305551)**.
+- Assinatura (mensal ou anual): **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc?enabled=2317876%2C2317894)**.
 
 ---
 
@@ -118,7 +120,7 @@ O app é **portátil**: uma pasta, sem instalador. Para desinstalar, apague a pa
 
 ### Passo a passo
 
-1. **Compre a assinatura** pelo link: **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/155ebdd4-f062-41fd-bb33-2cd4cab0ad5d?enabled=2305538%2C2305551)**. Você escolhe o plano mensal ou o anual. A cobrança é feita pelo Lemon Squeezy.
+1. **Compre a assinatura** pelo link: **[comprar a licença](https://lmunarrador.lemonsqueezy.com/checkout/buy/c4b8a09f-1c1d-4f7e-a5c7-00b046d23bbc?enabled=2317876%2C2317894)**. Você escolhe o plano mensal ou o anual. A cobrança é feita pelo Lemon Squeezy.
 2. **Procure a chave de licença no e-mail** que você usou na compra. Ela também fica na sua página de pedidos do Lemon Squeezy ("Minhas compras").
 3. No app, abra a aba **Licença**.
 4. **Cole a chave** no campo (ele aparece mascarado) e clique em **Ativar**.
